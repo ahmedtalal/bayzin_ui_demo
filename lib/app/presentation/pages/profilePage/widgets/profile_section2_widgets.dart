@@ -15,18 +15,28 @@ class ProfileSection2Widgets extends StatelessWidget {
           Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             crossAxisAlignment: CrossAxisAlignment.end,
-            children: const [
-              CustomTextWidget(
-                title: "محمد سامي",
-                titleTextStyle: TextStyle(
-                  fontFamily: appFont,
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black,
-                ),
+            children: [
+              Row(
+                children: const [
+                  Icon(
+                    Icons.maps_home_work,
+                    size: 30,
+                    color: Colors.blue,
+                  ),
+                  SizedBox(width: 15),
+                  CustomTextWidget(
+                    title: "محمد سامي",
+                    titleTextStyle: TextStyle(
+                      fontFamily: appFont,
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                    ),
+                  ),
+                ],
               ),
-              SizedBox(height: 0),
-              CustomTextWidget(
+              const SizedBox(height: 0),
+              const CustomTextWidget(
                 title: "شخصية مؤثرة في الفيزياء",
                 titleTextStyle: TextStyle(
                   fontFamily: appFont,
@@ -35,8 +45,8 @@ class ProfileSection2Widgets extends StatelessWidget {
                   color: AppColors.customColor1,
                 ),
               ),
-              SizedBox(height: 0),
-              CustomTextWidget(
+              const SizedBox(height: 0),
+              const CustomTextWidget(
                 title: "شخصية مؤثرة في الفيزياء",
                 titleTextStyle: TextStyle(
                   fontFamily: appFont,
